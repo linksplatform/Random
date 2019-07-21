@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>LinksPlatform's Platform.Random Class Library</Description>
+    <Copyright>Konstantin Diachenko</Copyright>
+    <AssemblyTitle>Platform.Random</AssemblyTitle>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <Authors>Konstantin Diachenko</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Platform.Random</AssemblyName>
+    <PackageId>Platform.Random</PackageId>
+    <PackageTags>LinksPlatform;Random;RandomExtensions;RandomHelpers</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/0a9177c11892ebb2fe467dc3ea9eaf5a5588f610/doc/Avatar-rainbow.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/linksplatform/Random</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/linksplatform/Random/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/linksplatform/Random</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Platform.Ranges" Version="0.0.2" />
+  </ItemGroup>
+
+</Project>
