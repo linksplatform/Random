@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Random Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Random</AssemblyTitle>
-    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionPrefix>0.0.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Platform.Random</AssemblyName>
@@ -21,6 +21,9 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes>Use UtcNow.Ticks hash code as seed instead of 32-bit truncated value.
+Platform.Ranges dependency updated to 0.0.3 version.
+Issues fixes.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
