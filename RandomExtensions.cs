@@ -3,6 +3,10 @@ using Platform.Ranges;
 
 namespace Platform.Random
 {
+    /// <summary>
+    /// Contains extension methods for Random class.
+    /// Содержит методы расширения для класса Random.
+    /// </summary>
     public static class RandomExtensions
     {
         /// <summary>

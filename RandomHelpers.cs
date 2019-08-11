@@ -1,5 +1,9 @@
 ﻿namespace Platform.Random
 {
+    /// <summary>
+    /// Contains field-helper for Random class.
+    /// Содержит вспомогательное поле для класса Random.
+    /// </summary>
     public static class RandomHelpers
     {
         /// <summary>
