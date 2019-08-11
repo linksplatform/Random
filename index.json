@@ -1,0 +1,22 @@
+{
+  "README.html": {
+    "href": "README.html",
+    "title": "Random | LinksPlatform's Platform.$TRAVIS_REPO_NAME Library",
+    "keywords": "Random LinksPlatform's Platform.Random Class Library. Namespace: Platform.Random Forked from: Konard/LinksPlatform/Platform/Platform.Helpers/Random NuGet package: Platform.Random"
+  },
+  "api/Platform.Random.html": {
+    "href": "api/Platform.Random.html",
+    "title": "Namespace Platform.Random | LinksPlatform's Platform.$TRAVIS_REPO_NAME Library",
+    "keywords": "Namespace Platform.Random Classes RandomExtensions RandomHelpers"
+  },
+  "api/Platform.Random.RandomExtensions.html": {
+    "href": "api/Platform.Random.RandomExtensions.html",
+    "title": "Class RandomExtensions | LinksPlatform's Platform.$TRAVIS_REPO_NAME Library",
+    "keywords": "Class RandomExtensions Inheritance Object RandomExtensions Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Random Assembly : Platform.Random.dll Syntax public static class RandomExtensions Methods | Improve this Doc View Source NextBoolean(Random) Return a random boolean value. Возвращает случайное булево значение. Declaration public static bool NextBoolean(this Random rnd) Parameters Type Name Description Random rnd A pseudo-random number generator. Генератор псевдослучайных чисел. Returns Type Description Boolean A random boolean value. Случайное булево значение. | Improve this Doc View Source NextUInt64(Random) Returns a random 64-bit unsigned integer that is greater than or equal to ulong.MinValue, and less than or equal to ulong.MaxValue. Возвращает случайное 64-разрядное целое число без знака, которое больше или равно ulong.MinValue и меньше или равно ulong.MaxValue. Declaration public static ulong NextUInt64(this Random rnd) Parameters Type Name Description Random rnd A pseudo-random number generator. Генератор псевдослучайных чисел. Returns Type Description UInt64 A 64-bit unsigned integer that is greater than or equal to ulong.MinValue, and less than or equal to ulong.MaxValue. 64-разрядное целое число без знака, которое больше или равно ulong.MinValue и меньше или равно ulong.MaxValue. | Improve this Doc View Source NextUInt64(Random, Range<UInt64>) Returns a random 64-bit unsigned integer that is greater than or equal to minimum of specified range, and less than or equal to maximum of specified range. Возвращает случайное 64-разрядное целое число без знака, которое больше или равно минимуму указанного диапазона и меньше или равно максимуму указанного диапазона. Declaration public static ulong NextUInt64(this Random rnd, Range<ulong> range) Parameters Type Name Description Random rnd A pseudo-random number generator. Генератор псевдослучайных чисел. Platform.Ranges.Range < UInt64 > range The range of possible values. Диапазон возможных значений. Returns Type Description UInt64 A 64-bit unsigned integer that is greater than or equal to the minimum of specified range, and less than or equal to the maximum of the specified range. 64-разрядное целое число без знака, которое больше или равно минимуму указанного диапазона и меньше или равно максимуму указанного диапазона."
+  },
+  "api/Platform.Random.RandomHelpers.html": {
+    "href": "api/Platform.Random.RandomHelpers.html",
+    "title": "Class RandomHelpers | LinksPlatform's Platform.$TRAVIS_REPO_NAME Library",
+    "keywords": "Class RandomHelpers Inheritance Object RandomHelpers Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Random Assembly : Platform.Random.dll Syntax public static class RandomHelpers Fields | Improve this Doc View Source Default Returns the pseudorandom number generator that is using the time of the first access to this field as seed. Возвращает генератор псевдослучайных чисел использующий в качестве seed время первого обращения к этому полю. Declaration public static readonly Random Default Field Value Type Description Random"
+  }
+}
