@@ -16,8 +16,8 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]
 fi
 
 # Insert repository name into DocFX's configuration files
-sed "s/\$TRAVIS_REPO_NAME/${TRAVIS_REPO_NAME}/g" toc.yml
-sed "s/\$TRAVIS_REPO_NAME/${TRAVIS_REPO_NAME}/g" docfx.json
+sed -i "s/\$TRAVIS_REPO_NAME/${TRAVIS_REPO_NAME}/g" toc.yml
+sed -i "s/\$TRAVIS_REPO_NAME/${TRAVIS_REPO_NAME}/g" docfx.json
 
 # DocFX installation
 nuget install docfx.console
