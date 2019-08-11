@@ -25,6 +25,10 @@
 Added code comments.</PackageReleaseNotes>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Code\Links\Random\Platform.Random.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Platform.Ranges" Version="0.0.4" />
   </ItemGroup>
