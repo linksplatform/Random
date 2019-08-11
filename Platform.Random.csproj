@@ -27,7 +27,7 @@ Issues fixes.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Ranges" Version="0.0.3" />
+    <PackageReference Include="Platform.Ranges" Version="0.0.4" />
   </ItemGroup>
 
 </Project>
