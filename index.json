@@ -4,15 +4,15 @@
     "title": "Random | LinksPlatform's Platform.Random Library",
     "keywords": "Random LinksPlatform's Platform.Random Class Library. Namespace: Platform.Random Forked from: Konard/LinksPlatform/Platform/Platform.Helpers/Random NuGet package: Platform.Random Documentation PDF file with code for e-readers. Depend on Platform.Ranges Mystery files .travis.yml - Travis CI build configuration. docfx.json and toc.yml - DocFX build configuration. format-document.sh - script for formating tex file for generating PDF from it. format-csharp-files.py - script for formating single .cs file as a part of tex file. generate-pdf.sh - script that generates PDF with code for e-readers. publish-docs.sh - script that publishes generated documentation and PDF with code for e-readers to gh-pages branch. push-nuget.bat - Windows script for publishing current version of NuGet package."
   },
-  "api/Platform.Random.html": {
-    "href": "api/Platform.Random.html",
-    "title": "Namespace Platform.Random | LinksPlatform's Platform.Random Library",
-    "keywords": "Namespace Platform.Random Classes RandomExtensions Contains extension methods for Random class. Содержит методы расширения для класса Random. RandomHelpers Contains field-helper for Random class. Содержит вспомогательное поле для класса Random."
-  },
   "api/Platform.Random.RandomHelpers.html": {
     "href": "api/Platform.Random.RandomHelpers.html",
     "title": "Class RandomHelpers | LinksPlatform's Platform.Random Library",
     "keywords": "Class RandomHelpers Contains field-helper for Random class. Содержит вспомогательное поле для класса Random. Inheritance Object RandomHelpers Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Random Assembly : Platform.Random.dll Syntax public static class RandomHelpers Fields | Improve this Doc View Source Default Returns the pseudorandom number generator that is using the time of the first access to this field as seed. Возвращает генератор псевдослучайных чисел использующий в качестве seed время первого обращения к этому полю. Declaration public static readonly Random Default Field Value Type Description Random"
+  },
+  "api/Platform.Random.html": {
+    "href": "api/Platform.Random.html",
+    "title": "Namespace Platform.Random | LinksPlatform's Platform.Random Library",
+    "keywords": "Namespace Platform.Random Classes RandomExtensions Contains extension methods for Random class. Содержит методы расширения для класса Random. RandomHelpers Contains field-helper for Random class. Содержит вспомогательное поле для класса Random."
   },
   "api/Platform.Random.RandomExtensions.html": {
     "href": "api/Platform.Random.RandomExtensions.html",
