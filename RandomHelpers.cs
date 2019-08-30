@@ -1,14 +1,14 @@
 ﻿namespace Platform.Random
 {
     /// <summary>
-    /// Contains field-helper for Random class.
-    /// Содержит вспомогательное поле для класса Random.
+    /// <para>Contains field-helper for Random class.</para>
+    /// <para>Содержит вспомогательное поле для класса Random.</para>
     /// </summary>
     public static class RandomHelpers
     {
         /// <summary>
-        /// Returns the pseudorandom number generator that is using the time of the first access to this field as seed.
-        /// Возвращает генератор псевдослучайных чисел использующий в качестве seed время первого обращения к этому полю.
+        /// <para>Returns the pseudorandom number generator that is using the time of the first access to this field as seed.</para>
+        /// <para>Возвращает генератор псевдослучайных чисел использующий в качестве seed время первого обращения к этому полю.</para>
         /// </summary>
         public static readonly System.Random Default = new System.Random(System.DateTime.UtcNow.Ticks.GetHashCode());
     }
