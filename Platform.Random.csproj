@@ -6,7 +6,8 @@
     <AssemblyTitle>Platform.Random</AssemblyTitle>
     <VersionPrefix>0.0.3</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net47</TargetFrameworks>
+    <TargetFramework Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFramework>
     <AssemblyName>Platform.Random</AssemblyName>
     <PackageId>Platform.Random</PackageId>
     <PackageTags>LinksPlatform;Random;RandomExtensions;RandomHelpers</PackageTags>
