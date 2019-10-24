@@ -30,7 +30,7 @@ Refactoring, issues fix.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Ranges" Version="0.0.5" />
+    <PackageReference Include="Platform.Ranges" Version="0.1.0" />
   </ItemGroup>
 
 </Project>
