@@ -20,12 +20,3 @@ NuGet package: [Platform.Random](https://www.nuget.org/packages/Platform.Random)
 
 ## Dependent libraries
 *   [Platform.Data.Doublets](https://github.com/linksplatform/Data.Doublets)
-
-## Mystery files
-*   [.travis.yml](https://github.com/linksplatform/Random/blob/master/.travis.yml) - Travis CI build configuration.
-*   [docfx.json](https://github.com/linksplatform/Random/blob/master/docfx.json) and [toc.yml](https://github.com/linksplatform/Random/blob/master/toc.yml) - DocFX build configuration.
-*   [format-document.sh](https://github.com/linksplatform/Random/blob/master/format-document.sh) - script for formatting `tex` file for generating PDF from it.
-*   [format-csharp-files.py](https://github.com/linksplatform/Random/blob/master/format-csharp-files.py) - script for formatting `.cs` files as a part of `tex` file.
-*   [generate-pdf.sh](https://github.com/linksplatform/Random/blob/master/generate-pdf.sh) - script that generates PDF with code for e-readers.
-*   [publish-docs.sh](https://github.com/linksplatform/Random/blob/master/publish-docs.sh) - script that publishes generated documentation and PDF with code for e-readers to `gh-pages` branch.
-*   [push-nuget.bat](https://github.com/linksplatform/Random/blob/master/push-nuget.bat) - Windows script for publishing current version of NuGet package.
