@@ -20,4 +20,5 @@ NuGet package: [Platform.Random](https://www.nuget.org/packages/Platform.Random)
 *   [Platform.Ranges](https://github.com/linksplatform/Ranges)
 
 ## Dependent libraries
+*   [Platform.Collections](https://github.com/linksplatform/Collections)
 *   [Platform.Data.Doublets](https://github.com/linksplatform/Data.Doublets)
