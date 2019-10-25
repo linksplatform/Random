@@ -19,7 +19,7 @@ namespace Platform.Random
         /// <para>64-разрядное целое число без знака, которое больше или равно <see cref="ulong.MinValue"/> и меньше или равно <see cref="ulong.MaxValue"/>.</para>
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static ulong NextUInt64(this System.Random random) => random.NextUInt64((ulong.MinValue, ulong.MaxValue));
+        public static ulong NextUInt64(this System.Random random) => random.NextUInt64(Range.UInt64);
 
         /// <summary>
         /// <para>Returns a random 64-bit unsigned integer that is greater than or equal to minimum of specified range, and less than or equal to maximum of specified range.</para>
