@@ -4,8 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Random", "csharp\Platform.Random\Platform.Random.csproj", "{7861CB2D-945E-49C9-AED6-39E478F1E706}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1394B2AC-0B80-4F29-82C3-A610C3BD6BDB} = {1394B2AC-0B80-4F29-82C3-A610C3BD6BDB}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Random.Tests", "csharp\Platform.Random.Tests\Platform.Random.Tests.csproj", "{182021D4-3D3B-4A0B-83F9-CE077812F727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpToCppTranslator", "CSharpToCppTranslator\CSharpToCppTranslator.csproj", "{1394B2AC-0B80-4F29-82C3-A610C3BD6BDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{182021D4-3D3B-4A0B-83F9-CE077812F727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{182021D4-3D3B-4A0B-83F9-CE077812F727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{182021D4-3D3B-4A0B-83F9-CE077812F727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1394B2AC-0B80-4F29-82C3-A610C3BD6BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1394B2AC-0B80-4F29-82C3-A610C3BD6BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1394B2AC-0B80-4F29-82C3-A610C3BD6BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1394B2AC-0B80-4F29-82C3-A610C3BD6BDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
