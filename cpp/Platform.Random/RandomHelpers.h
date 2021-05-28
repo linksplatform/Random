@@ -2,6 +2,6 @@
 {
     class RandomHelpers
     {
-        public: static readonly System::Random Default = System::Random(System::DateTime::UtcNow::Ticks::GetHashCode());
+        public: static const std::mt19937_64 Default;
     };
 }

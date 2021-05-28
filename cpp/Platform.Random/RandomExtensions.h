@@ -2,10 +2,20 @@
 {
     class RandomExtensions
     {
-        public: static std::uint64_t NextUInt64(System::Random random) { return random.NextUInt64(Range.std::uint64_t); }
+        //public: static std::uint64_t NextUInt64(const std::mt19937_64& random) { return random(Range::std::uint64_t); }
+        public: static std::uint64_t NextUInt64(const std::mt19937_64& random)
+        {
+            return std::uniform_int_distribution<std::uint64_t>(Range::UInt64.Minimum, Range::UInt64.Maximum)(random);
+        }
 
-        public: static std::uint64_t NextUInt64(System::Random random, Range<std::uint64_t> range) { return (std::uint64_t)(random.NextDouble() * range.Difference()) + range.Minimum; }
+        public: static std::uint64_t NextUInt64(const std::mt19937_64& random, const Range<std::uint64_t>& range)
+        {
+            return std::uniform_int_distribution<std::uint64_t>(range.Minimum, range.Maximum)(random);
+        }
 
-        public: static bool NextBoolean(System::Random random) { return random.Next(2) == 1; }
+        public: static bool NextBoolean(const std::mt19937_64& random)
+        {
+            return std::uniform_int_distribution<int>(0, 1)(random);
+        }
     };
 }

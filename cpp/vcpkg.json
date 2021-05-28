@@ -1,0 +1,8 @@
+{
+  "name": "platform-random",
+  "version-string": "0.0.1",
+  "homepage": "https://github.com/linksplatform/Random",
+  "dependencies": [
+    "platform-ranges"
+  ]
+}

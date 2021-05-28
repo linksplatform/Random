@@ -1,10 +1,10 @@
-﻿namespace Platform::Random::Tests
+﻿#include <Platform.Random.h>
+#include <gtest/gtest.h>
+
+namespace Platform::Random::Tests
 {
-    TEST_CLASS(RandomHelpersTests)
+    TEST(RandomHelpersTests, DefaultFieldTest)
     {
-        public: TEST_METHOD(DefaultFieldTest)
-        {
-            Assert.NotNull(RandomHelpers.Default);
-        }
+        ASSERT_NE(RandomHelpers::Default, nullptr);
     };
 }

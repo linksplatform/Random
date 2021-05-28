@@ -1,4 +1,6 @@
-﻿namespace Platform::Random::Tests
+﻿#include <Platform.Random.h>
+
+namespace Platform::Random::Tests
 {
     TEST_CLASS(RandomExtensionsTests)
     {
