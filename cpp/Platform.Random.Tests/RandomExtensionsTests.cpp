@@ -1,26 +1,25 @@
 ﻿#include <Platform.Random.h>
+#include <gtest/gtest.h>
 
 namespace Platform::Random::Tests
 {
-    TEST_CLASS(RandomExtensionsTests)
+    TEST(RandomExtensionsTests, NextUInt64Test)
     {
-        public: TEST_METHOD(NextUInt64Test)
+        auto lastValue = 0UL;
+        auto theSameCount = 0;
+        for (auto i = 0; i < 10; i++)
         {
-            auto lastValue = 0UL;
-            auto theSameCount = 0;
-            for (auto i = 0; i < 10; i++)
+            auto newValue = std::uniform_int_distribution<std::uint64_t>()(RandomHelpers::Default);
+            if (newValue == lastValue)
             {
-                auto newValue = RandomHelpers.Default.NextUInt64();
-                if (newValue == lastValue)
-                {
-                    theSameCount++;
-                }
-                else
-                {
-                    lastValue = newValue;
-                    theSameCount = 0;
-                }
-                Assert.InRange(RandomHelpers.Default.NextUInt64({0UL, 5UL}), 0UL, 5UL);
+                theSameCount++;
+            }
+            else
+            {
+                lastValue = newValue;
+                theSameCount = 0;
+            }
+                Assert.InRange(RandomHelpers::Default.NextUInt64({0UL, 5UL}), 0UL, 5UL);
             }
             Assert::IsTrue(theSameCount < 8);
         }

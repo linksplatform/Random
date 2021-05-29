@@ -2,7 +2,6 @@
 {
     class RandomExtensions
     {
-        //public: static std::uint64_t NextUInt64(const std::mt19937_64& random) { return random(Range::std::uint64_t); }
         public: static std::uint64_t NextUInt64(const std::mt19937_64& random)
         {
             return std::uniform_int_distribution<std::uint64_t>(Range::UInt64.Minimum, Range::UInt64.Maximum)(random);
