@@ -4,4 +4,4 @@
     {
         public: static const std::mt19937_64 Default;
     };
-}
+} // namespace Platform::Random
