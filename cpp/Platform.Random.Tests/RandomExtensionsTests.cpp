@@ -4,7 +4,7 @@
     {
         auto lastValue = 0UL;
         auto theSameCount = 0;
-        for (auto i = 0; i < 10; ++i)
+        for (auto i = 0; i < 10; i++)
         {
             auto newValue = NextUInt64(RandomHelpers::Default);
             if (newValue == lastValue)
@@ -21,7 +21,8 @@
             ASSERT_LT(temp, 5UL); ASSERT_GT(temp, 0UL);
         }
         ASSERT_LT(theSameCount, 8);
-        }
+    }
+
     TEST(RandomExtensionsTests, NextBooleanTest)
     {
         auto trueCount = 0;
@@ -40,6 +41,5 @@
         }
         ASSERT_GT(trueCount, 0);
         ASSERT_GT(falseCount, 0);
-        }
-    };
+    }
 }

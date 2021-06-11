@@ -2,6 +2,6 @@
 {
     class RandomHelpers
     {
-        public: static const std::mt19937_64 Default;
+        public: static inline std::mt19937_64 Default { std::random_device{}() };
     };
 } // namespace Platform::Random
