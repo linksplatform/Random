@@ -18,7 +18,8 @@
             }
 
             std::uint64_t temp = NextUInt64(RandomHelpers::Default, {0UL, 5UL});
-            ASSERT_LT(temp, 5UL); ASSERT_GT(temp, 0UL);
+            ASSERT_LT(temp, 5UL);
+            ASSERT_GT(temp, 0UL);
         }
         ASSERT_LT(theSameCount, 8);
     }

@@ -2,7 +2,7 @@
 {
     static std::uint64_t NextUInt64(std::mt19937_64& random)
     {
-        return NextUInt64(random, Range::UInt64);
+        return NextUInt64(random, Ranges::UInt64);
     }
 
     static std::uint64_t NextUInt64(std::mt19937_64& random, const Range<std::uint64_t>& range)
