@@ -3,8 +3,6 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.19)
 set(PROJECT_NAME Platform.Random)
 project(${PROJECT_NAME})
 
-message (${CMAKE_BINARY_DIR})
-
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
