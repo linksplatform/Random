@@ -1,6 +1,5 @@
 [requires]
 gtest/cci.20210126
-platform.exceptions/0.1.0
 platform.ranges/0.1.2
 
 [generators]
