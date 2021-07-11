@@ -3,11 +3,14 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.19)
 set(PROJECT_NAME Platform.Random)
 project(${PROJECT_NAME})
 
+message (${CMAKE_BINARY_DIR})
+
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
 add_library(${PROJECT_NAME}.Library INTERFACE)
 target_include_directories(${PROJECT_NAME}.Library INTERFACE ${PROJECT_NAME})
+target_link_libraries(${PROJECT_NAME}.Library INTERFACE CONAN_PKG::platform.exceptions)
 target_link_libraries(${PROJECT_NAME}.Library INTERFACE CONAN_PKG::platform.ranges)
 
 add_executable(${PROJECT_NAME}.Tests ${PROJECT_NAME}.Tests/AllTests.cpp)
