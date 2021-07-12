@@ -9,7 +9,7 @@
             auto newValue = NextUInt64(RandomHelpers::Default);
             if (newValue == lastValue)
             {
-                ++theSameCount;
+                theSameCount++;
             }
             else
             {
@@ -28,16 +28,16 @@
     {
         auto trueCount = 0;
         auto falseCount = 0;
-        for (auto i = 0; i < 10; ++i)
+        for (auto i = 0; i < 10; i++)
         {
             auto newValue = NextBoolean(RandomHelpers::Default);
             if (newValue)
             {
-                ++trueCount;
+                trueCount++;
             }
             else
             {
-                ++falseCount;
+                falseCount++;
             }
         }
         ASSERT_GT(trueCount, 0);
