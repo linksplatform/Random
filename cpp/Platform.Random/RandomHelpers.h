@@ -1,7 +1,4 @@
-﻿namespace Platform::Random
+﻿namespace Platform::Random::RandomHelpers
 {
-    class RandomHelpers
-    {
-        public: static inline std::mt19937_64 Default { std::random_device{}() };
-    };
-} // namespace Platform::Random
+    std::mt19937_64 Default { std::random_device{}() };
+}
