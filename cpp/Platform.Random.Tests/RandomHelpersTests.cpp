@@ -2,6 +2,6 @@
 {
     TEST(RandomHelpersTests, DefaultFieldTest)
     {
-        ASSERT_NE(RandomHelpers::Default, nullptr);
+        ASSERT_NE(RandomHelpers::Default, {});
     };
 }
