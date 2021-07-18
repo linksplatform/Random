@@ -1,7 +1,4 @@
-﻿namespace Platform::Random
+﻿namespace Platform::Random::RandomHelpers
 {
-    class RandomHelpers
-    {
-        public: static readonly System::Random Default = System::Random(System::DateTime::UtcNow::Ticks::GetHashCode());
-    };
+    std::mt19937_64 Default { std::random_device{}() };
 }

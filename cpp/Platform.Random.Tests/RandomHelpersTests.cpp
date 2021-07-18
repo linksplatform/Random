@@ -1,10 +1,7 @@
 ﻿namespace Platform::Random::Tests
 {
-    TEST_CLASS(RandomHelpersTests)
+    TEST(RandomHelpersTests, DefaultFieldTest)
     {
-        public: TEST_METHOD(DefaultFieldTest)
-        {
-            Assert.NotNull(RandomHelpers.Default);
-        }
+        ASSERT_NE(RandomHelpers::Default, decltype(RandomHelpers::Default){});
     };
 }

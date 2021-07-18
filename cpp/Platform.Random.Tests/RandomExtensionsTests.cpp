@@ -1,46 +1,46 @@
 ﻿namespace Platform::Random::Tests
 {
-    TEST_CLASS(RandomExtensionsTests)
+    TEST(RandomExtensionsTests, NextUInt64Test)
     {
-        public: TEST_METHOD(NextUInt64Test)
+        auto lastValue = 0UL;
+        auto theSameCount = 0;
+        for (auto i = 0; i < 10; i++)
         {
-            auto lastValue = 0UL;
-            auto theSameCount = 0;
-            for (auto i = 0; i < 10; i++)
+            auto newValue = NextUInt64(RandomHelpers::Default);
+            if (newValue == lastValue)
             {
-                auto newValue = RandomHelpers.Default.NextUInt64();
-                if (newValue == lastValue)
-                {
-                    theSameCount++;
-                }
-                else
-                {
-                    lastValue = newValue;
-                    theSameCount = 0;
-                }
-                Assert.InRange(RandomHelpers.Default.NextUInt64({0UL, 5UL}), 0UL, 5UL);
+                theSameCount++;
             }
-            Assert::IsTrue(theSameCount < 8);
-        }
+            else
+            {
+                lastValue = newValue;
+                theSameCount = 0;
+            }
 
-        public: TEST_METHOD(NextBooleanTest)
-        {
-            auto trueCount = 0;
-            auto falseCount = 0;
-            for (auto i = 0; i < 10; i++)
-            {
-                auto newValue = RandomHelpers.Default.NextBoolean();
-                if (newValue)
-                {
-                    trueCount++;
-                }
-                else
-                {
-                    falseCount++;
-                }
-            }
-            Assert::IsTrue(trueCount > 0);
-            Assert::IsTrue(falseCount > 0);
+            std::uint64_t temp = NextUInt64(RandomHelpers::Default, {0UL, 5UL});
+            ASSERT_LT(temp, 5UL);
+            ASSERT_GT(temp, 0UL);
         }
-    };
+        ASSERT_LT(theSameCount, 8);
+    }
+
+    TEST(RandomExtensionsTests, NextBooleanTest)
+    {
+        auto trueCount = 0;
+        auto falseCount = 0;
+        for (auto i = 0; i < 10; i++)
+        {
+            auto newValue = NextBoolean(RandomHelpers::Default);
+            if (newValue)
+            {
+                trueCount++;
+            }
+            else
+            {
+                falseCount++;
+            }
+        }
+        ASSERT_GT(trueCount, 0);
+        ASSERT_GT(falseCount, 0);
+    }
 }

@@ -1,11 +1,8 @@
 ﻿namespace Platform::Random
 {
-    class RandomExtensions
-    {
-        public: static std::uint64_t NextUInt64(System::Random random) { return random.NextUInt64(Range.std::uint64_t); }
+    static std::uint64_t NextUInt64(std::mt19937_64& random) { return NextUInt64(random, Ranges::UInt64); }
 
-        public: static std::uint64_t NextUInt64(System::Random random, Range<std::uint64_t> range) { return (std::uint64_t)(random.NextDouble() * range.Difference()) + range.Minimum; }
+    static std::uint64_t NextUInt64(std::mt19937_64& random, const Range<std::uint64_t>& range) { return std::uniform_int_distribution<std::uint64_t>{range.Minimum, range.Maximum}(random); }
 
-        public: static bool NextBoolean(System::Random random) { return random.Next(2) == 1; }
-    };
-}
+    static bool NextBoolean(std::mt19937_64& random) { return std::uniform_int_distribution<int>{0, 1}(random); }
+} // namespace Platform::Random
