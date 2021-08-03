@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "9p1dU2idNiAdNQkVJpDhtQ=="
+          "hash": "Cd/tW9PcclmKL5a534oKdw=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Random.RandomExtensions.html",
-          "hash": "bP9Ogv6Hl7et2QGFFKmmzA=="
+          "hash": "yMa6g7iFskbCx05o1dGekA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Random.RandomHelpers.html",
-          "hash": "+CWZKlgM4ukOcfOGSZ9dwg=="
+          "hash": "AVgSwov5ZdqOfz/zCG9yTQ=="
         }
       },
       "is_incremental": false,
