@@ -1,4 +1,4 @@
-﻿namespace Platform.Random
+namespace Platform.Random
 {
     /// <summary>
     /// <para>Contains field-helper for <see cref="System.Random"/> class.</para>
