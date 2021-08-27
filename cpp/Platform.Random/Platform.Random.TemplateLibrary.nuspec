@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Platform.Random.TemplateLibrary</id>
+    <title>LinksPlatform's Platform.Random Template Library</title>
+    <summary>LinksPlatform's Platform.Random is a Template Library that contains helper functions and constants to work with random numbers.</summary>
+    <description>LinksPlatform's Platform.Random is a Template Library that contains helper functions and constants to work with random numbers. Use Platform.Random.h file to include the library.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <version>0.0.1</version>
+    <authors>konard, norwend</authors>
+    <owners>konard, norwend</owners>
+    <copyright>konard, norwend</copyright>
+    <projectUrl>https://linksplatform.github.io/Random</projectUrl>
+    <repository type="git" url="https://github.com/linksplatform/Random" />
+    <icon>images/icon.png</icon>
+    <tags>C++ Native Random</tags>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <dependencies>
+      <group targetFramework="native">
+        <dependency id="Platform.Ranges.TemplateLibrary" version="0.1.2" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="icon.png" target="images/icon.png" />
+    <file src="Platform.Random.TemplateLibrary.targets" target="build\native\Platform.Random.TemplateLibrary.targets" />
+    <file src="Platform.Random.h" target="lib\native\include\Platform.Random.h" />
+    <file src="RandomHelpers.h" target="lib\native\include\RandomHelpers.h" />
+    <file src="RandomExtensions.h" target="lib\native\include\RandomExtensions.h" />
+  </files>
+</package>
