@@ -5,11 +5,15 @@
     <title>LinksPlatform's Platform.Random Template Library</title>
     <summary>LinksPlatform's Platform.Random is a Template Library that contains helper functions and constants to work with random numbers.</summary>
     <description>LinksPlatform's Platform.Random is a Template Library that contains helper functions and constants to work with random numbers. Use Platform.Random.h file to include the library.</description>
-    <releaseNotes>Initial release.</releaseNotes>
-    <version>0.0.1</version>
-    <authors>konard, norwend</authors>
-    <owners>konard, norwend</owners>
-    <copyright>konard, norwend</copyright>
+    <releaseNotes>Huge bug fix:
+- compile error
+- stupid functions ordering
+- todo static throw
+- test assertions</releaseNotes>
+    <version>0.1.0</version>
+    <authors>konard, norwend, uselessgoddess</authors>
+    <owners>konard, norwend, uselessgoddess</owners>
+    <copyright>konard, norwend, uselessgoddess</copyright>
     <projectUrl>https://linksplatform.github.io/Random</projectUrl>
     <repository type="git" url="https://github.com/linksplatform/Random" />
     <icon>images/icon.png</icon>
