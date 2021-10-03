@@ -3,8 +3,7 @@ using Platform.Ranges;
 
 namespace Platform.Random
 {
-    /// <summary>
-    /// <para>Contains extension methods for <see cref="System.Random"/> class.</para>
+    private.</para>
     /// <para>Содержит методы расширения для класса <see cref="System.Random"/>.</para>
     /// </summary>
     public static class RandomExtensions
