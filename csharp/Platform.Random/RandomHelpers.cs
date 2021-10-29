@@ -1,6 +1,7 @@
 namespace Platform.Random
 {
-    private.</para>
+    /// <summary>
+    /// <para>Contains field-helper for <see cref="System.Random"/> class.</para>
     /// <para>Содержит вспомогательное поле для класса <see cref="System.Random"/>.</para>
     /// </summary>
     public static class RandomHelpers
