@@ -1,7 +1,10 @@
-[![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Random)](https://www.nuget.org/packages/Platform.Random)
 [![Actions Status](https://github.com/linksplatform/Random/workflows/CD/badge.svg)](https://github.com/linksplatform/Random/actions?workflow=CD)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3ad6154e6c184bad8d99de8e8e7cbc4e)](https://app.codacy.com/gh/linksplatform/Random?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Random&utm_campaign=Badge_Grade_Settings)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/random/badge)](https://www.codefactor.io/repository/github/linksplatform/random)
+
+| [![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Random.TemplateLibrary)](https://www.nuget.org/packages/Platform.Random.TemplateLibrary) [![ConanCenter package](https://repology.org/badge/version-for-repo/conancenter/platform.random.svg)](https://conan.io/center/platform.random) | __C++__  |
+|-|-|
+| [![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Random)](https://www.nuget.org/packages/Platform.Random) | C# |
 
 # [Random](https://github.com/linksplatform/Random)
 
