@@ -26,11 +26,4 @@
       </group>
     </dependencies>
   </metadata>
-  <files>
-    <file src="icon.png" target="images/icon.png" />
-    <file src="Platform.Random.TemplateLibrary.targets" target="build\native\Platform.Random.TemplateLibrary.targets" />
-    <file src="Platform.Random.h" target="lib\native\include\Platform.Random.h" />
-    <file src="RandomHelpers.h" target="lib\native\include\RandomHelpers.h" />
-    <file src="RandomExtensions.h" target="lib\native\include\RandomExtensions.h" />
-  </files>
 </package>
