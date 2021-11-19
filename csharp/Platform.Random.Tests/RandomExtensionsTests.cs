@@ -2,20 +2,8 @@ using Xunit;
 
 namespace Platform.Random.Tests
 {
-    /// <summary>
-    /// <para>
-    /// Represents the random extensions tests.
-    /// </para>
-    /// <para></para>
-    /// </summary>
     public class RandomExtensionsTests
     {
-        /// <summary>
-        /// <para>
-        /// Tests that next u int 64 test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public void NextUInt64Test()
         {
@@ -38,12 +26,6 @@ namespace Platform.Random.Tests
             Assert.True(theSameCount < 8);
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that next boolean test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public void NextBooleanTest()
         {
