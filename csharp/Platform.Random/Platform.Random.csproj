@@ -26,6 +26,7 @@
     <LangVersion>latest</LangVersion>
     <PackageReleaseNotes>.NET 5 support is added.
 Platform.Ranges dependency updated from 0.2.0 to 0.3.0.</PackageReleaseNotes>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
