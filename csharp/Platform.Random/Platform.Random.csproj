@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Random Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Random</AssemblyTitle>
-    <VersionPrefix>0.2.0</VersionPrefix>
+    <VersionPrefix>0.3.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.Random</AssemblyName>
@@ -12,7 +12,7 @@
     <PackageTags>LinksPlatform;Random;RandomExtensions;RandomHelpers</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
     <PackageProjectUrl>https://linksplatform.github.io/Random</PackageProjectUrl>
-    <PackageLicenseExpression>Unlicensed</PackageLicenseExpression>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/linksplatform/Random</RepositoryUrl>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -23,8 +23,9 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>.NET 5 support is added.
-Platform.Ranges dependency updated from 0.2.0 to 0.3.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>Change target frameworks to net7.
+Platform.Ranges dependency updated from 0.3.0 to 0.5.0.
+Change license to unlicense.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -37,7 +38,7 @@ Platform.Ranges dependency updated from 0.2.0 to 0.3.0.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Ranges" Version="0.3.0" />
+    <PackageReference Include="Platform.Ranges" Version="0.5.0" />
   </ItemGroup>
 
   <!--
