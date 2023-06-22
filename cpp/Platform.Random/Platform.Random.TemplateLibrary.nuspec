@@ -5,7 +5,7 @@
     <title>LinksPlatform's Platform.Random Template Library</title>
     <summary>LinksPlatform's Platform.Random is a Template Library that contains helper functions and constants to work with random numbers.</summary>
     <description>LinksPlatform's Platform.Random is a Template Library that contains helper functions and constants to work with random numbers. Use Platform.Random.h file to include the library.</description>
-    <releaseNotes>Updated build files to conan 2.0</releaseNotes>
+    <releaseNotes>Updated build files to conan 2.0 and updated dependencies</releaseNotes>
     <version>0.2.0</version>
     <authors>konard, norwend, uselessgoddess</authors>
     <owners>konard, norwend, uselessgoddess</owners>
