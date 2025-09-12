@@ -24,6 +24,31 @@
         ASSERT_LT(theSameCount, 8);
     }
 
+    TEST(RandomExtensionsTests, NextUIntTemplateTest)
+    {
+        // Test NextUInt with different unsigned integer types
+        auto value8 = NextUInt<std::uint8_t>(RandomHelpers::Default);
+        auto value16 = NextUInt<std::uint16_t>(RandomHelpers::Default);
+        auto value32 = NextUInt<std::uint32_t>(RandomHelpers::Default);
+        auto value64 = NextUInt<std::uint64_t>(RandomHelpers::Default);
+        
+        // Test with ranges
+        auto rangedValue8 = NextUInt<std::uint8_t>(RandomHelpers::Default, {0, 10});
+        auto rangedValue16 = NextUInt<std::uint16_t>(RandomHelpers::Default, {0, 100});
+        auto rangedValue32 = NextUInt<std::uint32_t>(RandomHelpers::Default, {0, 1000});
+        auto rangedValue64 = NextUInt<std::uint64_t>(RandomHelpers::Default, {0UL, 10000UL});
+        
+        // Verify ranges
+        ASSERT_LE(rangedValue8, 10);
+        ASSERT_GE(rangedValue8, 0);
+        ASSERT_LE(rangedValue16, 100);
+        ASSERT_GE(rangedValue16, 0);
+        ASSERT_LE(rangedValue32, 1000);
+        ASSERT_GE(rangedValue32, 0);
+        ASSERT_LE(rangedValue64, 10000UL);
+        ASSERT_GE(rangedValue64, 0UL);
+    }
+
     TEST(RandomExtensionsTests, NextBooleanTest)
     {
         auto trueCount = 0;
