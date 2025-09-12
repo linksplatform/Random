@@ -7,9 +7,9 @@ namespace Platform.Random
     public static class RandomHelpers
     {
         /// <summary>
-        /// <para>Returns the pseudorandom number generator that is using the time of the first access to this field as seed.</para>
-        /// <para>Возвращает генератор псевдослучайных чисел использующий в качестве seed время первого обращения к этому полю.</para>
+        /// <para>Returns the shared, thread-safe pseudorandom number generator from .NET 6+.</para>
+        /// <para>Возвращает разделяемый, потокобезопасный генератор псевдослучайных чисел из .NET 6+.</para>
         /// </summary>
-        public static readonly System.Random Default = new System.Random(System.DateTime.UtcNow.Ticks.GetHashCode());
+        public static System.Random Default => System.Random.Shared;
     }
 }
